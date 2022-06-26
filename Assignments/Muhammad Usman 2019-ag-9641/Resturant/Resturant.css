@@ -1,0 +1,648 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*===================
+header design navbar
+====================*/
+
+.header{
+    background-image: url(./Photos/header.jpg);
+    background-size: 100% auto;
+    width: 100%;
+    height: 100vh;
+    background-repeat: none;
+}
+
+.opacitycolor{
+    background-color: rgba(0,0,0,0.1);
+    border: 0px solid red;
+    height: 100%;
+}
+
+.navbar{
+    padding: 1%;
+    border: px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.navbar .logo{
+    border: px solid red;
+    cursor: pointer;
+}
+
+.navbar .logo img{
+    border: px solid green;
+    width: 50px;
+}
+
+.navlink{
+    border: px solid wheat;
+    margin-right: 2vw;
+}
+
+.navlink ul{
+    border: px solid green;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.navlink ul li{
+    border: px solid red;
+    list-style: none;
+}
+
+.navlink ul li a{
+    border: px solid red;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 7px;
+}
+
+.navlink ul li a:hover{
+    color: #ffd900;
+    text-decoration: underline;
+}
+
+.navlink ul li .active{
+    color: wheat;
+}
+
+.checkbtn{
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+/*===================
+header Message
+====================*/
+.headerMessage {
+    border: px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+
+.headerMessageCol {
+    border: px solid green;
+    color: #fff;
+}
+
+.headerMessageCol h1 {
+    font-family: Archivo, sans-serif;
+    font-size: 4.3vw;
+    font-style: normal;
+}
+
+.headerMessageCol p {
+    margin: 3vw 0px;
+}
+
+.orderButton1 {
+    background-color: #ff2f1d;
+    color: #fff;
+    border: none;
+    border: 1px solid #db8b4a;
+    width: 200px;
+    height: 35px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+.orderButton1:hover {
+    background-color: #52200a;
+    border: 1px solid #db8b4a;
+}
+
+@media (max-width: 700px) {
+    .opacityColor {
+        background-color: rgba(0, 0, 0, .7);
+        border: px solid red;
+        height: 100%;
+    }
+
+    .headerMessageCol {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerMessage {
+        border: px solid red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .headerMessageCol h1 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .headerMessageCol p {
+        text-align: center;
+    }
+
+    .header {
+        background-image: url(../images/3.jpg);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/*===================
+cheif section
+====================*/
+
+
+.ourChef {
+    border: px solid red;
+    background-color: #f6eedf;
+    display: flex;
+    align-items: center;
+    padding: 10vh 0vh 5vh 0vh;
+}
+
+
+.ourChef h1 {
+    border: px solid green;
+    color: #f64b3c;
+    font-family: archivo;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.ourChef p {
+    border: px solid green;
+    color: #f64b3c;
+    text-align: center;
+    width: 80%;
+    margin: 4vh auto 15vh auto;
+
+}
+
+.allChef {
+    border: px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.eachChef {
+    border: px solid blue;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:5vh;
+}
+
+.eachChef img {
+    border: px solid gray;
+    width: 70%;
+    border-radius: 70%;
+    box-shadow: 0px -4px 28px 2px rgba(0, 0, 0, 0.48);
+}
+
+.eachChef h4 {
+    border: px solid gray;
+    color: #f64b3c;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.eachChef p {
+    border: px solid gray;
+    color: #f64b3c;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+/*===================
+burger section
+====================*/
+
+.bestBurger {
+    background-color: #f64b3c;
+    padding: 6vh 0vh;
+}
+
+.childBestBurger {
+    border: px solid red;
+}
+
+.bestBurgerRow {
+    border: px solid red;
+}
+
+.imageCol {
+    border: px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle();
+}
+
+.imageCol img {
+    width: 80%;
+}
+
+.textCol {
+    border: px solid green;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textCol h1 {
+    border: px solid green;
+    font-family: archivo;
+    font-size: 3.5rem;
+}
+
+.textCol p {
+    border: px solid green;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 6vh 0vh;
+}
+
+.textCol button {
+    transition: 0.5s;
+    width: 40%;
+    height: 45px;
+}
+
+.textCol button:hover {
+    color: #fff;
+    background-color: #bf4902;
+}
+
+.orderButton2 {
+    color: #ff2f1d;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #db8b4a;
+    width: 200px;
+    height: 35px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+.orderButton2:hover {
+    background-color: #52200a;
+    border: 1px solid #db8b4a;
+}
+
+
+
+/*===================
+burger section
+====================*/
+
+.orderButton3 {
+    color: #ff2f1d;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #db8b4a;
+    width: 200px;
+    height: 35px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+
+/*===================
+    Statistics
+====================*/
+
+
+.Statistics {
+    border: px solid red;
+    background-color: #f64b3c;
+    display: flex;
+    align-items: center;
+    padding: 10vh 0vh;
+}
+
+.childStatistics {
+    border: px solid orange;
+}
+
+.childStatistics>h1 {
+    border: px solid green;
+    color: #fff;
+    font-family: archivo;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.childStatistics>p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 5vh auto;
+    width: 80%;
+
+}
+
+.colAlign {
+    border: px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+.allStats {
+    border: px solid green;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    user-select: none;
+}
+
+.eachStats {
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+
+.eachStats h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.eachStats h2 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+@media (min-width:768px) {
+    .eachStats {
+        height: 160px;
+    }
+}
+
+@media (min-width:992px) {
+    .eachStats {
+        height: 180px;
+    }
+}
+
+/*===========================================*/
+.imageLayer{
+    width:100%;
+    height:100vh;
+    background-image:url(../images/background2.jpg);
+    background-position:center;
+    background-size:100% 100%;
+    padding:0px;
+    
+}
+
+.imageLayer .layer{
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 0, 0, .5);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLayer .layer h1{
+    border: px solid green;
+    font-family: archivo;
+    font-size: 3.5rem;
+    color:#fff;
+    padding: 44px;
+}
+
+
+.imageLayer .layer p{
+    color:#fff;
+    width:60%;
+    font-size:1.3rem;
+    text-align:center;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 700px) {
+    .imageLayer{
+        background-image:url(../images/2.jpg);
+    }
+}
+/*=================================================================*/
+
+.ourUpdate {
+    border: px solid red;
+    background-color: #f6eedf;
+    display: flex;
+    align-items: center;
+    padding: 5vh 0vh;
+    height:100vh;
+}
+
+.ourUpdate h1 {
+    border: px solid green;
+    color: #f64b3c;
+    font-family: archivo;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.ourUpdate p {
+    border: px solid green;
+    color: #f64b3c;
+    text-align: center;
+    width: 80%;
+    margin: 4vh auto 25vh auto;
+
+}
+
+
+.inputSignUp{
+    border:none;
+    width:55%;
+    margin:auto;
+    border-radius:40px;
+    height:40px;
+    overflow:hidden;
+}
+
+.inputSignUp input{
+    border:none;
+    padding-left:5%;
+}
+
+.inputSignUp button{
+    border:none;
+    background-color:#f64b3c ;
+    color:#fff;
+    padding:0px;
+}
+
+@media (max-width: 576px) {
+    .inputSignUp input{
+        width:50%;
+    }
+
+    .inputSignUp button{
+        width:50%;
+    }
+}
+/*========================================================*/
+.footer{
+    background-color:#222;
+    color:#fff;
+    padding-top:20vh;
+    padding-bottom:20vh;
+}
+
+.FooterCol{
+    margin-bottom:5vh;
+    padding:0% 5%;
+}
+
+.FooterCol p{
+    cursor: pointer;
+}
+
+.FooterCol1{
+    margin-bottom:5vh;
+}
+
+.FooterCol p{
+    margin:0px;
+}
+
+#socialMedia{
+    border:px solid red;
+    display:flex;
+    align-items:center;
+}
+
+.icon{
+    font-size:25px;
+    border:px solid red;
+    width:40px;
+    height:40px;
+    text-align:center;
+    border-radius:50%;
+    margin-right:7px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+    color:#222;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+.fIcon:hover{
+    background-color: #1877f2;
+    color:#fff;
+}
+
+.tIcon:hover{
+    background-color:#1da1f2;
+    color:#fff;
+}
+
+.wIcon:hover{
+    background-color:#25d366;
+    color:#fff;
+}
+
+.iIcon:hover{
+    background-color:#c32aa3;
+    color:#fff;
+}
+
+@media (max-width: 768px) {
+    .FooterCol{
+        width:32%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
